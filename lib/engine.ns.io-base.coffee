@@ -51,7 +51,8 @@ extendEngine = (engine) ->
     # 
     ###
     engine.Socket.prototype.onmessage = (message) ->
-        message += '' if tyepof message != 'string'
+        if typeof message == 'object'
+            message = message.toString()
         if message[0...3] == 'ns:'
             [ns,data] = @ns_unserialize message[3...]
             @emit(
