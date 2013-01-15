@@ -1,0 +1,10 @@
+{
+  "name": "engine.ns.io-base",
+  "repo": "pokermania/engine.ns.io-base",
+  "version": "0.4.0",
+  "dependencies": {},
+  "main": "lib/engine.ns.io-base.js",
+  "scripts": [
+    "lib/engine.ns.io-base.js"
+  ]
+}

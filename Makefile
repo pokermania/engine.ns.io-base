@@ -1,5 +1,5 @@
 
-build:
+compile:
 	@find lib -name '*.coffee' | xargs coffee -c 
 
 clean:
